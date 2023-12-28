@@ -11,6 +11,7 @@ public class Venta {
     private Cliente cliente;
     private Vendedor vendedor;
     private Automovil automovil;
+    private int mes;
     
     public Venta() {
     this(new GregorianCalendar(1800, 0, 1), new Cliente(),
@@ -27,7 +28,16 @@ public class Venta {
     public void setFechaVenta(GregorianCalendar fechaVenta) {
         this.fechaVenta = fechaVenta;
     }
-
+    
+    public void setFechaVenta(int dia, int mes, int año) {
+        fechaVenta = new GregorianCalendar(año, --mes, dia);
+        this.mes = mes;
+    }
+    
+    public void setMes(int mes) {
+        this.mes = mes;
+    }
+    
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
@@ -40,6 +50,9 @@ public class Venta {
         this.automovil = automovil;
     }
     
+    public int getMes() {
+        return mes;
+    }
     public GregorianCalendar getFechaVenta() {
         return fechaVenta;
     }
