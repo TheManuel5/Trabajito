@@ -1,0 +1,77 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package entidades;
+
+import java.util.GregorianCalendar;
+
+/**
+ *
+ * @author Sistemas
+ */
+public class Gerente extends Persona {
+    private String profesion;
+    private float SalarioMensual;
+    private float porcentajeComision;
+    private float totalVentas;
+    public Gerente(){
+        super();
+        profesion = "NP";
+        SalarioMensual= 0.0f;
+        porcentajeComision=0.0f;
+        totalVentas= 0.0f;
+    }    
+
+    public Gerente(String profesion, float SalarioMensual, float porcentajeComision, String numeroDni, String apellidos, String nombres, GregorianCalendar fechaNacimiento) {
+        super(numeroDni, apellidos, nombres, fechaNacimiento);
+        this.profesion = profesion;
+        this.SalarioMensual = SalarioMensual;
+        this.porcentajeComision = porcentajeComision;
+    }
+
+    public float getPorcentajeComision() {
+        return porcentajeComision;
+    }
+
+    public void setPorcentajeComision(float porcentajeComision) {
+        this.porcentajeComision = porcentajeComision;
+    }
+
+    public String getProfesion() {
+        return profesion;
+    }
+
+    public void setProfesion(String profesion) {
+        this.profesion = profesion;
+    }
+
+    public float getSalarioMensual() {
+        return SalarioMensual;
+    }
+
+    public void setSalarioMensual(float SalarioMensual) {
+        this.SalarioMensual = SalarioMensual;
+    }
+    
+    @Override
+    public String toString(){
+      return super.toString()+"\nProfesion: "+getProfesion()+"\nSalarioMensual: "+getSalarioMensual()+
+              "\nPorcentaje de comisión:"+(getPorcentajeComision()*100)+"%";
+
+    }
+   public float getMontoComision(){
+       return totalVentas*getPorcentajeComision();
+   }
+   public float getSalarioNeto(){
+       return getSalarioMensual()+getMontoComision();
+   }
+   
+   public float getSalarioVentas(){
+       return totalVentas;
+   }
+   
+   public void setSalarioVentas(float totalVentas){
+    this.totalVentas=totalVentas;
+    }
+  }
