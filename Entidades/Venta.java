@@ -3,7 +3,7 @@ package entidades;
 import java.util.*;
 /**
  *
- * @author Usuario
+ * @author Felix Chávez
  */
 public class Venta {
     
