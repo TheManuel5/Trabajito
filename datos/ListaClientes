@@ -26,7 +26,18 @@ public class ListaClientes {
             return listaClientes.get(pos);
         return null;
     }
-    
+
+    public String listarContenido() {
+        String contenido = "";
+        if(!listaClientes .isEmpty()) {
+            iterador = listaClientes.iterator();
+            while(iterador.hasNext())
+                contenido += iterador.next() + "\n";
+        } else
+            contenido = "\n\tNo hay datos registrados\n";
+        return contenido;
+    }
+
     public static int buscaClientePorDni(String dniBuscado) {
         int i=0;
         if(!listaClientes.isEmpty()){
