@@ -66,7 +66,7 @@ public class Vendedor extends Persona {
     }
     
     public float getSueldo(){
-        return getTotalVentas()*getPorcentajeComision();
+        return 1050 + getTotalVentas()*getPorcentajeComision();
     }
 
     public float getTotalVentas() {
