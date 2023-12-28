@@ -1,3 +1,10 @@
+package entidades;
+
+import java.util.*;
+/**
+ *
+ * @author Sistemas
+ */ 
 public abstract class Persona { //implementar clase abstracto
     private String numeroDni;
     private String apellidos;
