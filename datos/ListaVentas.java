@@ -4,7 +4,7 @@ import java.util.*;
 import entidades.*;
 /**
  *
- * @author Usuario
+ * @author Felix Chávez
  */
 public class ListaVentas {
     
