@@ -8,12 +8,8 @@ import entidades.*;
  */
 public class ListaVentas {
     
-    private ArrayList<Venta>listaVentas;
+    private  static ArrayList<Vendedor>listaVendedores=new ArrayList<>();;
     private Iterator<Venta>iterador;
-
-    public ListaVentas() {
-        listaVentas=new ArrayList<>();
-    }
     
     public void setVenta(Venta venta) {
         if(venta!=null)
