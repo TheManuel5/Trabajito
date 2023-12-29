@@ -82,7 +82,7 @@ public class AgenciaConcesionario{
     
     @Override
     public String toString() {
-        return "Concesionario " + nombre 
+        return "Concesionario " + getNombre() 
                +"\nGerente : " + gerente.toString() + "\nVendedores : " + listaVendedores.toString() 
                + "\nAutomoviles : " + listaAutomoviles.toString() + "\nVentas : " + listaVentas.listarContenido()
                + "\nClientes : " + listaClientes.listarContenido() + '}';
