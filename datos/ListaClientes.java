@@ -16,18 +16,18 @@ public class ListaClientes {
     private static ArrayList<Cliente>listaClientes= new ArrayList<>();
     private static Iterator<Cliente> iterador;
 
-    public void setCliente(Cliente cliente){
+    public static void setCliente(Cliente cliente){
         if(cliente!=null)
             listaClientes.add(cliente);
     }
     
-    public Cliente getCliente(int pos){
+    public static Cliente getCliente(int pos){
         if(pos>=0 &&pos<listaClientes.size())
             return listaClientes.get(pos);
         return null;
     }
 
-    public String listarContenido() {
+    public static String listarContenido() {
         String contenido = "";
         if(!listaClientes .isEmpty()) {
             iterador = listaClientes.iterator();
@@ -52,7 +52,7 @@ public class ListaClientes {
         return -1; 
      }
     
-    public int buscaClientePorDni(Cliente cliente){
+    public static int buscaClientePorDni(Cliente cliente){
         return listaClientes.indexOf(cliente);
     }
      public static void ordenarPorApellido() {
