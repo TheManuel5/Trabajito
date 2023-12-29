@@ -17,6 +17,11 @@ public class AgenciaConcesionario{
     private ListaVentas listaVentas;
     private ListaClientes listaClientes;
 
+    public AgenciaConcesionario(){
+    super();
+    nombre="NN";
+    }
+    
     public AgenciaConcesionario(String nombre, Gerente gerente, ListaVendedores listaVendedores, ListaAutomoviles listaAutomoviles, ListaVentas listaVentas, ListaClientes listaClientes) {
         this.nombre = nombre;
         this.gerente = gerente;
