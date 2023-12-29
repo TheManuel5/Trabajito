@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package entidades;
-import java.util.*;
+import datos.*;
 
 /**
  *
@@ -12,18 +12,18 @@ import java.util.*;
 public class AgenciaConcesionario{
     private String nombre;
     private Gerente gerente;
-    private Vendedor vendedor;    
-    private Automovil automovil;
-    private Venta venta;
-    private Cliente cliente;
+    private ListaVendedores listaVendedores ;    
+    private ListaAutomoviles listaAutomoviles;
+    private ListaVentas listaVentas;
+    private ListaClientes listaClientes;
 
-    public AgenciaConcesionario(String nombre, Gerente gerente, Vendedor vendedor, Automovil automovil, Venta venta, Cliente cliente) {
+    public AgenciaConcesionario(String nombre, Gerente gerente, ListaVendedores listaVendedores, ListaAutomoviles listaAutomoviles, ListaVentas listaVentas, ListaClientes listaClientes) {
         this.nombre = nombre;
         this.gerente = gerente;
-        this.vendedor = vendedor;
-        this.automovil = automovil;
-        this.venta = venta;
-        this.cliente = cliente;
+        this.listaVendedores = listaVendedores;
+        this.listaAutomoviles = listaAutomoviles;
+        this.listaVentas = listaVentas;
+        this.listaClientes = listaClientes;
     }
 
     public String getNombre() {
@@ -42,43 +42,44 @@ public class AgenciaConcesionario{
         this.gerente = gerente;
     }
 
-    public Vendedor getVendedor() {
-        return vendedor;
+    public ListaVendedores getListaVendedores() {
+        return listaVendedores;
     }
 
-    public void setVendedor(Vendedor vendedor) {
-        this.vendedor = vendedor;
+    public void setListaVendedores(ListaVendedores listaVendedores) {
+        this.listaVendedores = listaVendedores;
     }
 
-    public Automovil getAutomovil() {
-        return automovil;
+    public ListaAutomoviles getListaAutomoviles() {
+        return listaAutomoviles;
     }
 
-    public void setAutomovil(Automovil automovil) {
-        this.automovil = automovil;
+    public void setListaAutomoviles(ListaAutomoviles listaAutomoviles) {
+        this.listaAutomoviles = listaAutomoviles;
     }
 
-    public Venta getVenta() {
-        return venta;
+    public ListaVentas getListaVentas() {
+        return listaVentas;
     }
 
-    public void setVenta(Venta venta) {
-        this.venta = venta;
+    public void setListaVentas(ListaVentas listaVentas) {
+        this.listaVentas = listaVentas;
     }
 
-    public Cliente getCliente() {
-        return cliente;
+    public ListaClientes getListaClientes() {
+        return listaClientes;
     }
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
+    public void setListaClientes(ListaClientes listaClientes) {
+        this.listaClientes = listaClientes;
     }
-
+       
+    
     @Override
     public String toString() {
-        return "Concesionario : " + nombre 
-               +"\nGerente : " + gerente + "\nVendedor : " + vendedor 
-               + "\nAutomovil : " + automovil + "\nVenta : " + venta
-               + "\nCliente" + cliente + '}';
-    }
+        return "Concesionario " + nombre 
+               +"\nGerente : " + gerente + "\nVendedores : " + listaVendedores 
+               + "\nAutomoviles : " + listaAutomoviles.toString() + "\nVentas : " + listaVentas.toString()
+               + "\nClientes : " + listaClientes.toString() + '}';
+    }
 }
