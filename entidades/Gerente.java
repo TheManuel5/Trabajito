@@ -50,9 +50,9 @@ public class Gerente extends Persona {
     
     @Override
     public String toString() {
-        return "\nProfesión: " + getProfesion() + 
-               "\nSalario mensual: " + getSalarioMensual() + 
-               "\nPorcentaje de comisión: " + getPorcentajeComision()*100 + '%';
+        return super.toString() + "\n\tProfesión: " + getProfesion() + 
+               "\n\tSalario mensual: " + getSalarioMensual() + 
+               "\n\tPorcentaje de comisión: " + getPorcentajeComision()*100 + '%';
     }
     
     public float getMontoComision(){
