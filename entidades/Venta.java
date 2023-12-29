@@ -53,6 +53,7 @@ public class Venta {
     public int getMes() {
         return mes;
     }
+    
     public GregorianCalendar getFechaVenta() {
         return fechaVenta;
     }
