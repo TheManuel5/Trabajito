@@ -84,7 +84,7 @@ public class AgenciaConcesionario{
     public String toString() {
         return "Concesionario " + nombre 
                +"\nGerente : " + gerente + "\nVendedores : " + listaVendedores 
-               + "\nAutomoviles : " + listaAutomoviles.toString() + "\nVentas : " + listaVentas.toString()
-               + "\nClientes : " + listaClientes.toString() + '}';
+               + "\nAutomoviles : " + listaAutomoviles.toString() + "\nVentas : " + listaVentas.listarContenido()
+               + "\nClientes : " + listaClientes.listarContenido() + '}';
     }
 }
