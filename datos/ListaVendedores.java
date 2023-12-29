@@ -12,11 +12,11 @@ public class ListaVendedores {
     public ListaVendedores() {
         listaVendedores=new ArrayList<>();
     }
-    public void setVendedor(Vendedor vendedor){
+    public static void setVendedor(Vendedor vendedor){
         if(vendedor!=null)
             listaVendedores.add(vendedor);
     }
-    public Vendedor getVendedor(int pos){
+    public static Vendedor getVendedor(int pos){
         if(pos>=0 &&pos<listaVendedores.size())
             return listaVendedores.get(pos);
         return null;
@@ -42,7 +42,7 @@ public class ListaVendedores {
         return -1; 
      } 
     
-    public int buscarVendedorPorDni(Vendedor vendedor){
+    public static int buscarVendedorPorDni(Vendedor vendedor){
     return listaVendedores.indexOf(vendedor);
  }
 
