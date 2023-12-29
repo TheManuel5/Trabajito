@@ -53,5 +53,4 @@ public class ListaAutomoviles {
         return contenido;
     }
 
-
 }
