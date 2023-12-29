@@ -44,7 +44,7 @@ public class Cliente extends Persona {
 
     @Override
     public String toString() {
-       return super.toString() +"\nDirección: "+getDireccion()
-               + "\nTeléfono: "+getTelefono();
+       return super.toString() +"\n\tDirección: "+getDireccion()
+               + "\n\tTeléfono: "+getTelefono();
     }
 }
