@@ -47,6 +47,4 @@ public class Cliente extends Persona {
        return super.toString() +"\nDirección: "+getDireccion()
                + "\nTeléfono: "+getTelefono();
     }
-    
-    
 }
