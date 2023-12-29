@@ -5,7 +5,7 @@ import java.util.*;
  *
  * @author Sistemas
  */ 
-public abstract class Persona { //implementar clase abstracto
+public abstract class Persona {
     private String numeroDni;
     private String apellidos;
     private String nombre;
