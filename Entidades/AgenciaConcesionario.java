@@ -76,7 +76,7 @@ public class AgenciaConcesionario{
 
     @Override
     public String toString() {
-        return "Concesionario " + nombre 
+        return "Concesionario : " + nombre 
                +"\nGerente : " + gerente + "\nVendedor : " + vendedor 
                + "\nAutomovil : " + automovil + "\nVenta : " + venta
                + "\nCliente" + cliente + '}';
