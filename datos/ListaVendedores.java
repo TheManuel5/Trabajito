@@ -6,12 +6,9 @@ import entidades.*;
  * @author cristhian A.
  */
 public class ListaVendedores {
-    private  static ArrayList<Vendedor>listaVendedores;
+    private  static ArrayList<Vendedor>listaVendedores=new ArrayList<>();
     private  static Iterator<Vendedor> iterador;
 
-    public ListaVendedores() {
-        listaVendedores=new ArrayList<>();
-    }
     public static void setVendedor(Vendedor vendedor){
         if(vendedor!=null)
             listaVendedores.add(vendedor);
