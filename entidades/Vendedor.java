@@ -57,8 +57,8 @@ public class Vendedor extends Persona {
 
     @Override
     public String toString() {
-        return "Vendedor{" + "fechaContrato=" + getFechaContrato() 
-                + ", tiempoContrato=" + getTiempoContrato() + ", PorcentajeComision=" + getPorcentajeComision() + '}';
+        return super.toString() + "\n\tFecha de contrato: " + getFechaContrato() 
+                + "\n\tTiempo de Contrato: " + getTiempoContrato() + "\n\tPorcentaje de Comision: " + getPorcentajeComision();
     }
     
     public float getMontoComision() {
@@ -76,5 +76,4 @@ public class Vendedor extends Persona {
     public void setTotalVentas(float totalVentas) {
         this.totalVentas = totalVentas;
     }
-    
 }
